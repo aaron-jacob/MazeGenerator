@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Maze Generator</h1>
+  <h2>Visualizing BFS algorithm while solving a Maze!</h2>
+  <div class="input-container">
+    <div>
+      <label for="row-size">Row Size:</label>
+      <input type="number" id="row-size" min="5" max="50" value="15">
+    </div>
+    <div>
+      <label for="col-size">Column Size:</label>
+      <input type="number" id="col-size" min="5" max="50" value="15">
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <button id="generate-maze-button">Generate Maze</button>
+    <button id="solve-maze-button" style="display:none;">Solve Maze</button>
+  </div>
+  <div class="maze-wrapper">
+    <div id="maze-container"></div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
